@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/angular', function () {
+    return \File::get(public_path() .'app/index.hmtl');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
