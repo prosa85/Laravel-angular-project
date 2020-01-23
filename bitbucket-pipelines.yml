@@ -16,6 +16,7 @@ pipelines:
           - npm run build
         services:
           - docker
+          - mysql
 
 definitions:
   services:
