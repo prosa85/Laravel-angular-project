@@ -3,6 +3,10 @@ image: bitnami/laravel
 pipelines:
   default:
     - step:
+      caches:
+          - node
+          - docker
+          - composer
         script:
           - composer install
           - npm install node
