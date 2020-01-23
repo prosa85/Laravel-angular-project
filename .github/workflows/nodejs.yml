@@ -1,6 +1,9 @@
 name: Node CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -19,8 +22,8 @@ jobs:
         node-version: '10.x'
     - name: npm install, build, and test
       run: |
-        npm install
-        npm run build
+        npm ci
+        npm run build:ci
         npm test
       env:
         CI: true
