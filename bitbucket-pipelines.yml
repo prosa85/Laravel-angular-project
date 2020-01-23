@@ -6,7 +6,6 @@ pipelines:
         script:
           - composer install
           - ln -f -s .env.pipelines .env
-          - cat .env
           - php artisan migrate
           - npm install
           - npm run build
