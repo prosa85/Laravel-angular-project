@@ -4,10 +4,9 @@ pipelines:
   default:
     - step:
         script:
-          - cp .env.example .env
           - composer install
           - ln -f -s .env.pipelines .env
-          - php artisan key:generate
+          - cat .env
           - php artisan migrate
           - npm install
           - npm run build
