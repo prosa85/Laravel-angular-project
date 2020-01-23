@@ -3,7 +3,7 @@ image: bitnami/laravel
 pipelines:
   default:
     - step:
-      caches:
+        caches:
           - node
           - docker
           - composer
@@ -14,6 +14,8 @@ pipelines:
           - php artisan migrate
           - npm install
           - npm run build
+        services:
+          - docker
 
 definitions:
   services:
