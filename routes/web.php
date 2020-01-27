@@ -19,6 +19,10 @@ Route::get('/angular', function () {
     return \File::get(public_path() .'app/index.hmtl');
 });
 
+Route::get('test', function(){
+    return 'Test';
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
