@@ -1,3 +1,8 @@
+# Intallation
+run `composer install` to install all the dependencies for your laravel project
+
+run `npm install` to install all the dependecies for your frontend
+
 # Laravel
 Run `php artisan serve` to serve the backend
 
