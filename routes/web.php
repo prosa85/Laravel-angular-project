@@ -20,7 +20,7 @@ Route::get('/angular', function () {
 });
 
 Route::get('test', function(){
-    return 'Test';
+    return 'Test 2';
 });
 
 Auth::routes();
